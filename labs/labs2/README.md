@@ -127,57 +127,51 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
 ### 2. Выбор корневого моста
 **Выполняем настройки на коммутаторах**
 ```
-S1# enable
-S1# configure terminal
-S1(config)# interface range ethernet 0/0-3
-S1(config-if-range)# shutdown
-S1(config-if-range)# switchport trunk encapsulation dot1q
-S1(config-if-range)# switchport mode trunk
-S1(config-if-range)# no shutdown
-S1(config-if-range)# exit
-S1(config)# interface ethernet 0/1
-S1(config-if)# no shutdown
-S1(config-if)# exit
-S1(config)# interface ethernet 0/3
-S1(config-if)# no shutdown
-S1(config-if)# exit
-S1(config)# end
+S1#configure terminal
+S1(config)#interface range ethernet 0/0-3
+S1(config-if-range)#shutdown
+S1(config-if-range)#switchport trunk encapsulation dot1q
+S1(config-if-range)#switchport mode trunk
+S1(config-if-range)#switchport trunk allowed vlan 1
+S1(config-if-range)#exit
+S1(config)#interface ethernet 0/1
+S1(config-if)#no shutdown
+S1(config-if)#exit
+S1(config)#interface ethernet 0/3
+S1(config-if)#no shutdown
+S1(config-if)#exit
 S1# write
 ```
 ```
-S2# enable
-S2# configure terminal
-S2(config)# interface range ethernet 0/0-3
-S2(config-if-range)# shutdown
-S2(config-if-range)# switchport trunk encapsulation dot1q
-S2(config-if-range)# switchport mode trunk
-S2(config-if-range)# no shutdown
-S2(config-if-range)# exit
-S2(config)# interface ethernet 0/1
-S2(config-if)# no shutdown
-S2(config-if)# exit
-S2(config)# interface ethernet 0/3
-S2(config-if)# no shutdown
-S2(config-if)# exit
-S2(config)# end
+S2#configure terminal
+S2(config)#interface range ethernet 0/0-3
+S2(config-if-range)#shutdown
+S2(config-if-range)#switchport trunk encapsulation dot1q
+S2(config-if-range)#switchport mode trunk
+S2(config-if-range)#switchport trunk allowed vlan 1
+S2(config-if-range)#exit
+S2(config)#interface ethernet 0/1
+S2(config-if)#no shutdown
+S2(config-if)#exit
+S2(config)#interface ethernet 0/3
+S2(config-if)#no shutdown
+S2(config-if)#exit
 S2# write
 ```
 ```
-S3# enable
-S3# configure terminal
-S3(config)# interface range ethernet 0/0-3
-S3(config-if-range)# shutdown
-S3(config-if-range)# switchport trunk encapsulation dot1q
-S3(config-if-range)# switchport mode trunk
-S3(config-if-range)# no shutdown
-S3(config-if-range)# exit
-S3(config)# interface ethernet 0/1
-S3(config-if)# no shutdown
-S3(config-if)# exit
-S3(config)# interface ethernet 0/3
-S3(config-if)# no shutdown
-S3(config-if)# exit
-S3(config)# end
+S3#configure terminal
+S3(config)#interface range ethernet 0/0-3
+S3(config-if-range)#shutdown
+S3(config-if-range)#switchport trunk encapsulation dot1q
+S3(config-if-range)#switchport mode trunk
+S3(config-if-range)#switchport trunk allowed vlan 1
+S3(config-if-range)#exit
+S3(config)#interface ethernet 0/1
+S3(config-if)#no shutdown
+S3(config-if)#exit
+S3(config)#interface ethernet 0/3
+S3(config-if)#no shutdown
+S3(config-if)#exit
 S3# write
 ```
 **Результат show spanning-tree на S1**
