@@ -1,7 +1,7 @@
 # Репозиторий лабораторных работ курса "Сетевой инженер" в OTUS.ru
 ## Содержание
-1. [Настройка. VLAN. Router-on-Stick](./labs/labs1/README.md)
-2. [Избыточность локальных сетей. STP](./labs/labs2/README.md)
+1. [Настройка. VLAN. Router-on-Stick](./labs/labs1/README.md) +
+2. [Избыточность локальных сетей. STP](./labs/labs2/README.md) +
 3. [DHCPv4/v6 и SLAAC](./labs/labs3/README.md)
 4. [Архитектура сети](./labs/labs4/README.md)
 5. [Маршрутизация на основе политик (PBR)](./labs/labs5/README.md)
