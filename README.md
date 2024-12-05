@@ -12,5 +12,5 @@
 10. [Масштабируемость и дизайн iBGP](./labs/labs10)
 11. [BGP. Управление анонсами](./labs/labs11)
 12. [Основные протоколы сети интернет (DHCP, NTP, NAT)](./labs/labs12)
-13. [Виртуальная частные сети - VPN](./labs/labs13)
+13. [VPN. GRE. DmVPN](./labs/labs13)
 14. [IPSec over DmVPN](./labs/labs14)
