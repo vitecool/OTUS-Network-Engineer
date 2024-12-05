@@ -13,4 +13,4 @@
 11. [BGP. Управление анонсами](./labs/labs11)
 12. [Основные протоколы сети интернет (DHCP, NTP, NAT)](./labs/labs12)
 13. [Виртуальная частные сети - VPN](./labs/labs13)
-14. [TLS Сертификаты](./labs/labs14)
+14. [IPSec over DmVPN](./labs/labs14)
