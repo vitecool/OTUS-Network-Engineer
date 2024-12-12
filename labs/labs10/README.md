@@ -19,7 +19,6 @@
 
 ### 1. Настроите iBGP в офисе Москва между маршрутизаторами R14 и R15.
 
-
 ```
 R14(config)#router ospf 1
 R14(config)#no passive-interface loopback 0
@@ -256,7 +255,6 @@ RPKI validation codes: V valid, I invalid, N Not found
  *>  10.30.17.0/24    0.0.0.0                  0         32768 i
  *>  10.30.31.0/24    10.30.16.1         1536000         32768 i
  *>  10.30.38.0/24    10.30.16.1         1536000         32768 i
-
 ```
 
 bgp bestpath as-path multipath-relax заработал, есть маршруты с одинаковым AS_PATH.
@@ -273,9 +271,6 @@ VPC1> ping 10.30.38.8
 84 bytes from 10.30.38.8 icmp_seq=3 ttl=58 time=1.486 ms
 84 bytes from 10.30.38.8 icmp_seq=4 ttl=58 time=1.337 ms
 84 bytes from 10.30.38.8 icmp_seq=5 ttl=58 time=1.461 ms
-
-VPC1>
-
 ```
 
 Ping от VPC С.-Петербург к VPC7 Москва
@@ -288,6 +283,4 @@ VPC> ping 10.16.3.17
 84 bytes from 10.16.3.17 icmp_seq=3 ttl=58 time=1.363 ms
 84 bytes from 10.16.3.17 icmp_seq=4 ttl=58 time=1.253 ms
 84 bytes from 10.16.3.17 icmp_seq=5 ttl=58 time=1.208 ms
-
-VPC>
 ```
